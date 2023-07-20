@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  background-color: #191970;
+}
+
+.navbar-brand{
+  font-family: 'Graduate', cursive;
+  font-size: 25px;
+}
+
+.card-title{
+  color: #FF8C00;
+}
+
+@media only screen and (max-height: 1000px) {
+  .hasil {
+    height: 480px;
+  }
+  
+  .menu {
+    height: 600px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar{
+  display: none;
+}
