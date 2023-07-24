@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# TUGAS PENGGANTI UAS APLIKASI KASIR CAFE MENGGUNAKAN REACTJS DAN FIREBASE MATA KULIAH PEMROGRAMAN LOGIC DAN SEMANTIC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Latar belakang
+Cafe dan restoran merupakan bisnis yang semakin berkembang pesat di era modern ini. Dalam mengelola cafe, salah satu aspek yang sangat penting adalah sistem kasir yang efisien dan handal. Sistem kasir yang baik memungkinkan cafe untuk mengelola menu, pesanan, dan pembayaran dengan lebih mudah dan akurat. Namun, seringkali ditemukan tantangan dalam mengimplementasikan sistem kasir tradisional yang membutuhkan perangkat keras dan perangkat lunak berbayar yang mahal.
+Dalam menghadapi tantangan ini, penggunaan teknologi web merupakan alternatif terbaik karena fleksibilitas dan biaya implementasinya yang lebih rendah. ReactJS menjadi salah satu framework JavaScript yang cukup populer untuk membangun aplikasi web modern. Di sisi lain, Firebase adalah platform pengembangan aplikasi berbasis cloud yang menyediakan layanan untuk menyimpan dan mengelola data, otentikasi pengguna, serta menyediakan berbagai alat pengembangan lainnya.
 
-## Available Scripts
+## Pembagian Tugas
+1. Yazid Syafiq Irsyad (1003210010)
+- Membuat fitur daftar menu
+- Membuat fitur pesanan
+- Membuat fitur manajemen menu (tambah menu, edit menu, dan hapus menu)
 
-In the project directory, you can run:
+2. Haidhi Angkawijana Tedja (1003210004)
+- Membuat fitur bayar dan invoice
+- Membuat fitur login admin
+- Membuat fitur keamanan
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Fitur-fitur
+- **Daftar Menu** <br>
+Fitur ini akan menampilkan menu yang ada di cafe beserta informasi penting terkait menu yang tersedia seperti foto menu, kategori menu, nama menu, dan harga. 
+Di fitur ini juga nantinya akan ditambahkan satu tombol untuk menambahkan menu ke dalam daftar pesanan.
+- **Pesanan** <br>
+Fitur ini berfungsi untuk memproses pesanan. Dalam memproses pesanan di aplikasi kasir cafe yang akan dibuat, hal pertama yang perlu dilakukan yaitu memasukkan menu yang akan dipilih ke dalam daftar pesanan dengan menekan tombol tambah menu di fitur daftar menu. Selanjutnya, fitur ini nantinya dapat digunakan untuk mengedit pesanan seperti menambah jumlah menu yang dipesan, menambahkan catatan, dan menghapus menu dari daftar pesanan. Di fitur ini juga nantinya akan ditampilkan total harga dari menu yang dipesan dan akan ada tombol bayar untuk melakukan proses pembayaran.
+- **Bayar** <br>
+Aplikasi kasir cafe ini akan dilengkapi dengan fitur bayar. Proses pembayaran akan dilakukan dengan menekan tombol bayar yang ada di fitur pesanan. Ketika pembayaran berhasil dilakukan akan muncul notifikasi berhasil. Fitur bayar ini juga nantinya akan dilengkapi dengan invoice.
+- **Login Admin** <br>
+Aplikasi kasir cafe ini nantinya akan dilengkapi dengan fitur login admin untuk mengatur role¬ setiap user. Nantinya, hanya admin yang dapat mengakses fitur untuk manajemen menu seperti tambah, edit, dan hapus menu. Sementara itu, user biasa hanya dapat mengakses fitur lain seperti daftar menu, pesanan, dan bayar.
+- **Manajemen Menu** <br>
+Fitur ini nantinya hanya akan dapat diakses oleh admin. Fitur ini memungkinkan admin untuk mengelola menu yang terdiri dari tiga bagian, yaitu tambah menu, edit menu, dan hapus menu. Pada bagian tambah menu, nantinya akan ada form input yang harus diisi oleh admin seperti nama menu, kode menu, harga menu, kategori menu, dan foto menu. Ketika menu berhasil ditambahkan, akan ada notifikasi berhasil dan menu yang berhasil ditambah tersebut akan langsung ditampilkan di daftar menu. Menu yang ditampilkan di daftar menu, nantinya akan dilengkapi dengan tombol edit menu dan hapus menu. Kedua tombol tersebut mewakili masing-masing fitur. Fitur edit menu digunakan untuk mengedit nama, kategori, dan harga menu. Sementara itu, fitur hapus menu digunakan untuk menghapus menu dari daftar menu.
+- **Keamanan** <br>
+Fitur ini nantinya akan membatasi role dari setiap user. Apabila nantinya ada seorang user yang bukan admin mencoba untuk mengakses fitur manajemen menu secara langsung tanpa melalui login admin, maka aplikasi akan mengarahkan user tersebut ke halaman “Access Denied”.
